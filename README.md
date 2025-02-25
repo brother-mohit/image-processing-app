@@ -102,10 +102,12 @@ Response:
 ]
 }
 
+Testing
+- Use attached CSV file for testing
+- or Create your own file in csv format and test
+
 Future Improvements
 
 - Add authentication (JWT)
-
 - Improve UI for upload & status checking
-
 - Optimize image processing performance
