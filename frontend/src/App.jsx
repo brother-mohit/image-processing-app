@@ -19,7 +19,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await axios.post(backendURL, formData, {
+      const response = await axios.post(`${backendURL}/upload`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setRequestId(response.data.requestId);
@@ -32,9 +32,7 @@ function App() {
     if (!requestId) return alert("Enter a valid Request ID");
 
     try {
-      const response = await axios.get(
-        `http://localhost:3000/status/${requestId}`
-      );
+      const response = await axios.get(`${backendURL}/status/${requestId}`);
       setStatus(response.data);
     } catch (error) {
       console.error("Error checking status:", error);
