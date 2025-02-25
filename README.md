@@ -26,25 +26,6 @@ Render (Backend), Vercel (Frontend)
 [React Frontend] → [Express Backend] → [MongoDB Atlas]
 ↳ [Redis Queue] → [Cloudinary Processing]
 
-📂 Project Structure
-
-/image-processing-app
-├── /backend # Node.js backend
-│ ├── server.js # Main server file
-│ ├── routes.js # API routes
-│ ├── worker.js # Redis worker
-│ ├── models/ # Mongoose models
-│ ├── config/ # Configuration files
-│ ├── .env # Environment variables
-│ ├── package.json # Backend dependencies
-│
-├── /frontend # React frontend (Vite)
-│ ├── src/
-│ ├── public/
-│ ├── App.jsx # Main React component
-│ ├── package.json # Frontend dependencies
-│
-├── README.md # Main project documentation
 
 🚀 Setup & Installation
 
