@@ -4,6 +4,9 @@ Image Processing System
 
 This project is a full-stack image processing system that allows users to upload a CSV file containing product names and image URLs. The images are compressed and stored asynchronously, and users can check the processing status via an API.
 
+Backend server Link : https://image-processing-app-0ufx.onrender.com/
+frontend server Link : https://image-processing-gpxsgt4rh-brother-mohits-projects.vercel.app/
+
 🔥 Tech Stack
 
 Layer
