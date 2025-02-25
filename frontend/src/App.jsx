@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
+const backendURL = "https://image-processing-app-0ufx.onrender.com"; // Use Render's backend URL
+
 function App() {
   const [file, setFile] = useState(null);
   const [requestId, setRequestId] = useState("");
@@ -17,13 +19,9 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await axios.post(
-        "http://localhost:3000/upload",
-        formData,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-        }
-      );
+      const response = await axios.post(backendURL, formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
       setRequestId(response.data.requestId);
     } catch (error) {
       console.error("Error uploading file:", error);
